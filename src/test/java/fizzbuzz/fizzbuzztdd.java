@@ -17,5 +17,17 @@ public class fizzbuzztdd {
 		Fizzbuzz fb = new Fizzbuzz();
 		assertEquals("Fizz",fb.fizzbuzz(3));
 	}
+	
+	@Test
+	public void retornarBuzzCuandoNumeroSeaMultiploDeCinco(){
+		Fizzbuzz fb = new Fizzbuzz();
+		assertEquals("Buzz",fb.fizzbuzz(5));
+	}
+	
+	@Test
+	public void retornarFizzBuzzCuandoNumeroSeaMultiploDeTresyCinco(){
+		Fizzbuzz fb = new Fizzbuzz();
+		assertEquals("FizzBuzz",fb.fizzbuzz(15));
+	}
 
 }
