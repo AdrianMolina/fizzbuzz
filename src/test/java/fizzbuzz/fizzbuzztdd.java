@@ -11,5 +11,11 @@ public class fizzbuzztdd {
 		Fizzbuzz fb = new Fizzbuzz();
 		assertEquals("1",fb.fizzbuzz(1));
 	}
+	
+	@Test
+	public void retornarFizzCuandoNumeroSeaMultiploDeTres(){
+		Fizzbuzz fb = new Fizzbuzz();
+		assertEquals("Fizz",fb.fizzbuzz(3));
+	}
 
 }
