@@ -3,6 +3,10 @@ package fizzbuzz;
 public class Fizzbuzz {
 	
 	public String fizzbuzz(int numero){
+		
+		if (numero % 3 == 0 && numero % 5 == 0){
+			return "FizzBuzz";
+		}
 		if (numero % 3 == 0){
 			return "Fizz";
 		}
@@ -11,5 +15,4 @@ public class Fizzbuzz {
 		}
 			return String.valueOf(numero);
 	}
-
 }
