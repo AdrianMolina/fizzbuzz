@@ -2,33 +2,27 @@ package fizzbuzz;
 
 public class Fizzbuzz {
 	
+	private static final int _FIZZ = 3;
+	private static final int _BUZZ = 5;
+	private static final String _MENSAJE_BUZZ = "Buzz";
+	private static final String _MENSAJE_FIZZ = "Fizz";
+	private static final String _MENSAJE_FIZZ_BUZZ = "FizzBuzz";
+
 	public String fizzbuzz(int numero){
 		
-		if (esMultiploDeTres(numero) && esMultiploDeCinco(numero)){
-			return "FizzBuzz";
+		if (esMultiploDe(numero, _FIZZ) && esMultiploDe(numero, _BUZZ)){
+			return _MENSAJE_FIZZ_BUZZ;
 		}
-		if (esMultiploDeTres(numero)){
-			return "Fizz";
+		if (esMultiploDe(numero, _FIZZ)){
+			return _MENSAJE_FIZZ;
 		}
-		if (esMultiploDeCinco(numero)){
-			return "Buzz";
+		if (esMultiploDe(numero, _BUZZ)){
+			return _MENSAJE_BUZZ;
 		}
 			return String.valueOf(numero);
 	}
-	
-	private boolean esMultiploDeTres(int numero){
-		boolean resp = false;
-		if (numero % 3 == 0){
-			resp = true;
-		}
-			return resp;
-	}
-	
-	private boolean esMultiploDeCinco(int numero){
-		boolean resp = false;
-		if (numero % 5 == 0){
-			resp = true;
-		}
-			return resp;
+
+	private boolean esMultiploDe(int numero, int multiplo) {
+		return numero % multiplo == 0;
 	}
 }
