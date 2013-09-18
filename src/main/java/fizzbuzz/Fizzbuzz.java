@@ -25,4 +25,11 @@ public class Fizzbuzz {
 	private boolean esMultiploDe(int numero, int multiplo) {
 		return numero % multiplo == 0;
 	}
+
+	public String imprimir(int maximo) {
+		String resultado = "";
+		for (int i = 1; i <= maximo; i++)
+			resultado = resultado + fizzbuzz(i) + "\n";
+		return resultado;
+	}
 }
