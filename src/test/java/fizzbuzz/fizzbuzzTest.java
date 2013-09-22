@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class fizzbuzztdd {
+public class fizzbuzzTest {
 	
 	Fizzbuzz fb = new Fizzbuzz();
 
